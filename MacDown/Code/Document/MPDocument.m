@@ -950,6 +950,16 @@ static void (^MPGetPreviewLoadingCompletionHandler(MPDocument *doc))()
     return self.preferences.htmlMathJax;
 }
 
+- (BOOL)rendererHasMermaid:(MPRenderer *)renderer
+{
+        return self.preferences.htmlMermaid;
+}
+
+- (BOOL)rendererHasGraphviz:(MPRenderer *)renderer
+{
+        return self.preferences.htmlGraphviz;
+}
+
 - (NSString *)rendererHighlightingThemeName:(MPRenderer *)renderer
 {
     return self.preferences.htmlHighlightingThemeName;
